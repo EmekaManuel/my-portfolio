@@ -43,7 +43,7 @@ const Portfolio = () => {
       <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full '>
 
         <motion.div 
-             variants={fadeIn("left", 0.2)}
+             variants={fadeIn("top", 0.2)}
              initial="hidden"
              whileInView={"show"}
              viewport={{ once: false, amount: 0.9 }} className='pb-8'>
@@ -51,7 +51,7 @@ const Portfolio = () => {
           <p className='py-6'>Here are some of the projects I have worked on.</p>
         </motion.div>
 
-        <div className='grid sm:grid-cols-2 md:grid-cols-4 gap-8 px-12 sm:px-0' >
+        <div className='grid grid-cols-1 w-full gap-y-8 items md:grid-cols-4' >
 
 
         {
