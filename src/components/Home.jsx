@@ -34,7 +34,7 @@ const Home = () => {
           <TypeAnimation
             sequence={[" Developer", 2000, "Technical Writer", 2000]}
             speed={50}
-            className="text-white text-4xl sm:text-5xl font-bold"
+            className="text-white text-2xl sm:text-5xl font-bold"
             wrapper="span"
             repeat={Infinity}
           />
