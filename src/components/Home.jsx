@@ -48,9 +48,9 @@ const Home = () => {
               viewport={{ once: false, amount: 0.4 }}
               className="text-gray-300 py-4 max-w-md">
             I am a Front-end developer with expertise using JavaScript
-            technologies. I have 2 years of experience building and designing
-            softwares. Currently I love to work on web applications using
-            technologies such as HTML. CSS. React, Tailwind, NodeJS.
+            technologies. I have 2 years of experience building and designing interactive and user-friendly web interfaces.
+            Currently I love to work on web applications using 
+            technologies such as HTML. CSS. React, Next, Tailwind and NodeJS.
           </motion.p>
 
           <motion.div
