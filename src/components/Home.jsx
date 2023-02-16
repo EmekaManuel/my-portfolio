@@ -32,7 +32,7 @@ const Home = () => {
               className="text-3xl sm:text-5xl font-bold text-white">
             I'm a <br />
           <TypeAnimation
-            sequence={[" Developer", 2000, "Technical Writer", 2000]}
+            sequence={[" Frontend Developer", 2000, "Technical Writer", 2000]}
             speed={50}
             className="text-white text-2xl sm:text-5xl font-bold"
             wrapper="span"
