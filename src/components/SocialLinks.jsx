@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import {HiOutlineMail} from 'react-icons/hi'
 
 
@@ -30,6 +30,16 @@ const SocialLinks = () => {
       id:3,
       child: (
         <>
+        Twitter <FaTwitter size={20}/>
+        </>
+      ),
+      href:'https://twitter.com/EmekaManuel',
+   
+    },
+    {
+      id:4,
+      child: (
+        <>
         Email <HiOutlineMail size={20}/>
         </>
       ),
@@ -54,7 +64,7 @@ const SocialLinks = () => {
 
 
   return (
-    <div className=' lg:flex flex-col left-0  fixed lg:top-[35%] bottom-[8%]'>
+    <div className=' lg:flex flex-col left-0  fixed lg:top-[35%] bottom-[3%]'>
         <ul>
 
           {links.map(({ id, href, child, style, download}) => (
