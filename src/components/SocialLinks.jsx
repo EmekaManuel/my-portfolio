@@ -13,7 +13,7 @@ const SocialLinks = () => {
         Linkedin <FaLinkedin size={20}/>
         </>
       ),
-      href:'https://linkedin.com',
+      href:'https://linkedin.com/in/emmanuel-onyewuchi-16119023b',
       style:'rounded-tr-md'
     },
     {
@@ -33,7 +33,7 @@ const SocialLinks = () => {
         Twitter <FaTwitter size={20}/>
         </>
       ),
-      href:'https://twitter.com/EmekaManuel',
+      href:'https://twitter.com/marrnuel_',
    
     },
     {
@@ -44,7 +44,16 @@ const SocialLinks = () => {
         </>
       ),
       href:'mailto:marrnuel12@gmail.com',
-    }
+    },
+    // {
+    //   id:5,
+    //   child: (
+    //     <>
+    //     LinkTree <FaLink size={20}/>
+    //     </>
+    //   ),
+    //   href:'https://linktr.ee.com/marrnuel',
+    // }
     // {
     //   id:4,
     //   child: (

@@ -36,7 +36,7 @@ const NavBar = () => {
 
   return (
   <div className='flex justify-between items-center bg-black p-4 text-white
-      px-4 w-full h-20 fixed mb-5'>
+      px-4 w-full h-20 fixed '>
     <div>
       <h2 className=' capitalize font-medium text-gray-200 text-[20px]'> Emeka <span className='text-sky-500'> Manuel </span> </h2>
     </div>

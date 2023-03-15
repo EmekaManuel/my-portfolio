@@ -7,19 +7,14 @@ const Contact = () => {
   return (
     <div name='contact' className='w-full h-screen bg-gradient-to-b from-black to-gray-800 p-4 text-white'>
         <div className='flex flex-col justify-center max-w-screen-lg mx-auto  h-full'>
-            <motion.div
-                 variants={fadeIn("up", 0.3)}
-                 initial="hidden"
-                 whileInView={"show"}
-                 viewport={{ once: false, amount: 0.4 }} className='pb-8'>
+            <div className=''>
+              
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
                 <p className='py-6'>Kindly Submit the Form Below. Looking Forward to Connecting With You ! </p>
-            </motion.div>
+            </div>
 
-            <motion.div
-                 variants={fadeIn("up", 0.3)}
-                 initial="hidden"
-                 whileInView={"show"}
+            <div
+                
                  viewport={{ once: false, amount: 0.4 }} className='flex justify-center items-center'>
                 <form action="https://getform.io/f/1fdac298-8043-402d-9066-626fcdf0573f" method='POST'
                 className='flex flex-col w-full md:w-1/2'>
@@ -33,7 +28,7 @@ const Contact = () => {
                     <button className='text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-3 py-1 mx-auto my-2 flex items-center
                     hover:scale-105 duration-300 rounded-md'>Let's Connect</button>
                 </form>
-            </motion.div>
+            </div>
         </div>
     </div>
   )

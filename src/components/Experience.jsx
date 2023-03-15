@@ -8,8 +8,8 @@ import github from '../assets/github.png'
 import nextjs from '../assets/nextjs.png'
 import nodejs from '../assets/node.png'
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
+// import { motion } from "framer-motion";
+// import { fadeIn } from "../variants";
 
 const Experience = () => {
 
@@ -65,31 +65,25 @@ const Experience = () => {
     ]
 
   return (
-    <div  name='experience' className='bg-gradient-to-b from-black pt-16 md:pt-0 to-gray-800 text-white md:h-screen' >
+    <div  name='experience' className='bg-gradient-to-b from-black pt-16  md:pt-0 to-gray-800 text-white md:h-screen' >
         <div className= 'max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full '>
-            <motion.div 
-            variants={fadeIn("up", 0.3)}
-            initial="hidden"
-            whileInView={"show"}
-            viewport={{ once: false, amount: 0.4 }}className='pb-8'>
+            <div 
+     >
                 <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Tech Stack</p>
                 <p className='py-6'>These are technologies I have worked with</p>
-            </motion.div>
+            </div>
 
             <div className=' w-full grid grid-cols-2 sm:grid-cols-4 gap-8 px-12 py-6 sm:px-0 text-center' >
 
                 {
                     techStacks.map(({id, title, src, style}) => (
                         
-                    <motion.div
-                    variants={fadeIn("up", 0.3)}
-                    initial="hidden"
-                    whileInView={"show"}
-                    viewport={{ once: false, amount: 0.4 }} 
+                    <div
+                  
                     key={id} className={`shadow-lg  hover:scale-105 duration-500 py-2 rounded-lg ${style}`}>
                         <img src={src} alt="" className='w-20 mx-auto' />
                         <p className='mt-4'>{title}</p>
-                    </motion.div>
+                    </div>
                     ))
                 }
 
