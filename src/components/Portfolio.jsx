@@ -1,10 +1,10 @@
 import React from "react";
-import project1 from "../assets/portfolio/educalc.png";
-import project2 from "../assets/portfolio/gym.png";
-import project3 from "../assets/portfolio/nodeaid.png";
-import project4 from "../assets/portfolio/recipe.png";
-import project5 from "../assets/portfolio/crypto.png";
-import project6 from "../assets/portfolio/zanistore.png";
+import project1 from "../assets/portfolio/zani-stores.png";
+import project2 from "../assets/portfolio/aje-luxury.png";
+import project3 from "../assets/portfolio/transl-x.png";
+import project4 from "../assets/portfolio/crypto.png";
+import project5 from "../assets/portfolio/meta-tracker.png";
+import project6 from "../assets/portfolio/meta-tracker.png";
 
 // import { motion } from "framer-motion";
 // import { fadeIn } from "../variants";
@@ -14,26 +14,42 @@ const Portfolio = () => {
     {
       id: 1,
       src: project1,
+      link: "https://m-zani.netlify.app",
+      github: "https://github.com/EmekaManuel/zani-store"
     },
     {
       id: 2,
       src: project2,
+      link: "https://aje-luxury.netlify.app",
+      github: "https://github.com/EmekaManuel/aje-luxury"
+
     },
     {
       id: 3,
       src: project3,
+      link: "https://transl-x.netlify.app",
+      github: "https://github.com/EmekaManuel/transl-x"
+
     },
     {
       id: 4,
       src: project4,
+      link: "https://satoshi-check.netlify.app",
+      github: "https://github.com/EmekaManuel/satoshi-check"
+
     },
     {
       id: 5,
       src: project5,
+      link: "https://m-zani.netlify.app",
+      github: ""
+
     },
     {
       id: 6,
       src: project6,
+      link: "https://tracka-meta.netlify.app",
+      github: "https://github.com/EmekaManuel/tracka-meta"
     },
   ];
 
@@ -57,21 +73,26 @@ const Portfolio = () => {
         <div className="" >
           
         <div className="grid grid-cols-1 w-full gap-y-8 items md:grid-cols-3 gap-x-3">
-          {portfolioItems.map(({ id, src }) => (
+          {portfolioItems.map(({ id, src, link, github }) => (
             <div key={id} className="shadow-md shadow-gray-400 rounded-lg">
               <img
                 src={src}
                 alt=""
                 srcset=""
-                className="rounded-md duration-200 hover:scale-105"
+                className="rounded-md duration-200"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-4 py-1 m-2 duration-200 hover:scale-105">
+                <a href={link}>
+                <button className="w-1/2 px-4 py-1 m-2 duration-200">
                   Demo
                 </button>
-                <button className="w-1/2 px-4 py-1 m-2 duration-200 hover:scale-105">
+                </a>
+                <a href={github}>
+
+                <button className="w-1/2 px-4 py-1 m-2 duration-200">
                   Code
                 </button>
+                </a>
               </div>
             </div>
           ))}
